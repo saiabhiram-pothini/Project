@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  color: #444;
+}
+header {
+  color: white;
+  position: relative;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("BackGroundImg.png");
+  height: 100vh;
+  background-size: cover;
+}
+.nav-bar {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 18px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar h2 {
+  font-size: 48px;
+  margin-left: -172px;
+  margin-top: 0px;
+  transform: translate(-10, 0);
+  color: rgb(12, 146, 176);
+}
+.nav-options {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.header-content {
+  position: absolute;
+  top: 45%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 1200px;
+}
+.header-content-inner {
+  width: 75%;
+}
+.header-content-inner h1 {
+  font-size: 128px;
+  margin-bottom: 48px;
+}
+.header-content-inner p {
+  font-size: 32px;
+}
+.nav-options:link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav-options:visited {
+  color: white;
+  text-decoration: none;
+}
+.nav-options:hover {
+  font-weight: bolder;
+  font-size: 20px;
+  color: orangered;
+}
+.nav-options:active {
+  color: white;
+  text-decoration: none;
+}
+
+.button-div {
+  margin-right: -200px;
+  width: 350px;
+  height: 60px;
+  /* border: 2px solid #eee;
+  background-color: #b6bdc9; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  padding: 5px;
+  /* margin-left: auto; */
+}
+.signup-button {
+  width: 80px;
+  height: 40px;
+  margin-right: 7px;
+  border: none;
+  align-self: center;
+  border-radius: 25px;
+  /* background-color: #e9ecf0; */
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.login-button {
+  width: 80px;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #1859c9;
+  cursor: pointer;
+}
+.login-button:hover {
+  background-color: #1859c9db;
+}
+
+.signup-button:hover {
+  background-color: #e9ecf0d1;
+}
+.Logo {
+  width: 100px;
+}
