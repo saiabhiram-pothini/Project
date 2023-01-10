@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <title>Project 1</title>
+    <style>
+      .main {
+        margin-top: 5rem;
+      }
+      .motive {
+        font-size: 20px;
+        margin-bottom: 0;
+        color: grey;
+      }
+      .tech {
+        font-size: 18px;
+        color: grey;
+        margin-top: 12px;
+        margin-bottom: 0;
+      }
+      .des {
+        font-size: 18px;
+      }
+      .up-car {
+        border-radius: 12px;
+        box-shadow: 5px 10px 8px 10px #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+      <div class="container text-white">
+        <a class="navbar-brand" href="index.html">Akova</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar1"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav nav nav-fill w-100">
+            <li class="nav-item text-white">
+              <a class="nav-link text-white" href="student.html" target="_blank"
+                >Home</a
+              >
+            </li>
+            <!-- <li class="nav-item text-white">
+              <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tags
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Artificial Intelligence</a>
+                  <a class="dropdown-item" href="#">Machine Learning</a>
+                  <a class="dropdown-item" href="#">Cloud Computing</a>
+                  
+              </div>
+              
+            </li> -->
+            <!-- <li class="nav-item">
+              <form class="form-inline">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Artificial Intelligence"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-success my-2 my-sm-0"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </li> -->
+            <li class="nav-item text-white">
+              <a
+                class="nav-link text-white"
+                href="stu-myidea.html"
+                target="_blank"
+              >
+                My ideas
+              </a>
+            </li>
+            <li class="nav-item text-white">
+              <a class="nav-link text-white" href="#"> Hello </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-bell"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+                  />
+                </svg>
+                Notifications
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown show">
+                <a
+                  class="btn btn-primary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    class="bi bi-person-lines-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"
+                    />
+                  </svg>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">My Ideas</a>
+                  <a class="dropdown-item" href="#">My Success</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container main">
+      <h1 class="h1">Cancer Detection using Machine Learning Algorithms</h1>
+      <p>Contributer:<strong>Elon Musk</strong></p>
+      <!-- <p class="motive">Motive:</p> -->
+      <!-- <h4>To detect the cancer cells accurately for efficient treatment of patients</h4> -->
+      <p class="tech">Technologies Used:</p>
+      <p><strong>Tensor Flow,Logistic Regression</strong></p>
+      <h5 class="mt-5">Description:</h5>
+      <p class="des">
+        This project is about finding cancer cells using Machine Learning
+        Algorithms and effectively treating the cancer.In this we feed the
+        machine with the training data and test data.In the training data we
+        provide the infromation about the previously detected cancer cells.With
+        this we train the machine efficiently.Thus once after training the
+        machine with the test data whose outputs are already known.Thus the
+        algorithm is now ready to detect the cancer cells in the human body.And
+        can be used effectivily in the treatment of cancer.
+      </p>
+      <h5>Going to be revolutionary in:</h5>
+      <ol>
+        <li>Reducing human strain on detection of cancer cells.</li>
+        <li>
+          Saving lives of patients who are not getting cancer detection in
+          enough time.
+        </li>
+        <li>Reducing the cost of cancer cell detection.</li>
+      </ol>
+      <h5>Output:</h5>
+      <p class="des">The output of the above project is</p>
+      <img
+        src="https://news.developer.nvidia.com/wp-content/uploads/2016/06/DL-Breast-Cancer-Detection-Image.png"
+        alt="drone-img"
+        class="img-fluid"
+        width="800px"
+        height="auto"
+      />
+      <p
+        style="
+          color: grey;
+          margin-top: 32px;
+          font-size: 18px;
+          margin-bottom: 8px;
+        "
+      >
+        Problem Statement
+      </p>
+      <h6 class="h5">
+        Working of the above algorithm is efficient upto a specific level.But
+        after that threshold limit is is getting failed.
+      </h6>
+      <h6 class="h5">Any one who can solve this will get awarded</h6>
+      <!-- <p style="color:grey;margin-top:32px;font-size:18px;margin-bottom:8px;" >Click to Action</p> -->
+      <div class="d-flex justify-content-between align-items-center mb-5 mt-5">
+        <div>
+          <div class="flex justify-content-around">
+            <button class="btn btn-primary">View Code</button>
+            <button class="btn btn-outline-warning">See Demo</button>
+          </div>
+        </div>
+        <div class="up-car p-4">
+          <h6 class="h5 text-center">Got the solution!</h6>
+          <p style="font-size: 20px">You can upload your idea here</p>
+          <div class="d-flex justify-content-center">
+            <a href="upload.html" target="_blank"
+              ><button class="btn btn-success">Upload Idea</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start bg-dark text-white">
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        >
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="#" class="me-4 link-secondary">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="bi bi-google"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3 text-secondary"></i>AKOVA
+                </h6>
+                <p>This is where talent meets opportunity....</p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                <p>
+                  <a href="#!" class="text-reset">Angular</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">React</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Vue</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Laravel</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p>
+                  <i class="fas fa-home me-3 text-secondary"></i> New York, NY
+                  10012, US
+                </p>
+                <p>
+                  <i class="fas fa-envelope me-3 text-secondary"></i>
+                  info@example.com
+                </p>
+                <p>
+                  <i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567
+                  88
+                </p>
+                <p>
+                  <i class="fas fa-print me-3 text-secondary"></i> + 01 234 567
+                  89
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-4"
+          style="background-color: rgba(0, 0, 0, 0.025)"
+        >
+          © 2022 Copyright:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+            >Akova</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+  </body>
+</html>

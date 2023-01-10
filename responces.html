@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <title>Responces</title>
+    <style>
+      .main {
+        margin-top: 5rem;
+      }
+      .sol {
+        color: grey;
+        font-size: 18px;
+      }
+      .res-tab {
+        border-radius: 12px;
+        box-shadow: 2px 2px 4px 4px #bbb;
+      }
+      .d-flex {
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+      <div class="container text-white">
+        <a class="navbar-brand" href="index.html" target="_blank">Akova</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar1"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav nav nav-fill w-100">
+            <li class="nav-item text-white">
+              <a
+                class="nav-link text-white"
+                href="enterprenuer.html"
+                target="_blank"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item text-white">
+              <a
+                class="nav-link text-white"
+                href="postprob.html"
+                target="_blank"
+                >Post a problem</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-bell"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+                  />
+                </svg>
+                Notifications
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown show">
+                <a
+                  class="btn btn-primary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    class="bi bi-person-lines-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"
+                    />
+                  </svg>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">My Ideas</a>
+                  <a class="dropdown-item" href="#">My Success</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container main">
+      <h1 class="h1 text-center mb-4">Alexa based medical assistant</h1>
+      <h2 class="mt-5 text-secondary mb-5">Responses</h2>
+      <div class="d-flex flex-column">
+        <div class="res-tab p-3 mb-5">
+          <h3 class="text-center">Response 1</h3>
+          <p class="sol" style="margin-bottom: 0">Solution Overview</p>
+          <p style="font-size: 22px; margin-top: 0">
+            Using Scalar Vector Machine Instead of Logistic Regression
+          </p>
+          <p class="sol" style="margin-bottom: 0">Description</p>
+          <p style="font-size: 18px; margin-top: 0">
+            Using SVM makes the model more efficient and accurate.So due to the
+            improvement in the efficiency the model will also perform well above
+            the treshold limit.And efficient data cleaning will also increases
+            the performance of the model.
+          </p>
+          <p class="sol" style="margin-bottom: 0">Attachments</p>
+          <ul style="list-style: none">
+            <li><a href="#">Attached File</a></li>
+            <li><a href="#">Github Repositary</a></li>
+          </ul>
+          <p class="sol" style="margin-bottom: 0">Posted by</p>
+          <blockquote><strong>Sai Abhi Ram</strong></blockquote>
+          <div class="d-flex justify-content-around">
+            <div>
+              <button class="btn btn-success">Approve</button>
+            </div>
+            <div>
+              <button class="btn btn-danger">Reject</button>
+            </div>
+          </div>
+        </div>
+        <div class="res-tab p-3 mb-5">
+          <h3 class="text-center">Response 2</h3>
+          <p class="sol" style="margin-bottom: 0">Solution Overview</p>
+          <p style="font-size: 22px; margin-top: 0">
+            Using Scalar Vector Machine Instead of Logistic Regression
+          </p>
+          <p class="sol" style="margin-bottom: 0">Description</p>
+          <p style="font-size: 18px; margin-top: 0">
+            Using SVM makes the model more efficient and accurate.So due to the
+            improvement in the efficiency the model will also perform well above
+            the treshold limit.And efficient data cleaning will also increases
+            the performance of the model.
+          </p>
+          <p class="sol" style="margin-bottom: 0">Attachments</p>
+          <ul style="list-style: none">
+            <li><a href="#">Attached File</a></li>
+            <li><a href="#">Github Repositary</a></li>
+          </ul>
+          <p class="sol" style="margin-bottom: 0">Posted by</p>
+          <blockquote><strong>Sai Abhi Ram</strong></blockquote>
+          <div class="d-flex justify-content-around">
+            <div>
+              <button class="btn btn-success">Approve</button>
+            </div>
+            <div>
+              <button class="btn btn-danger">Reject</button>
+            </div>
+          </div>
+        </div>
+        <div class="res-tab p-3 mb-5">
+          <h3 class="text-center">Response 3</h3>
+          <p class="sol" style="margin-bottom: 0">Solution Overview</p>
+          <p style="font-size: 22px; margin-top: 0">
+            Using Scalar Vector Machine Instead of Logistic Regression
+          </p>
+          <p class="sol" style="margin-bottom: 0">Description</p>
+          <p style="font-size: 18px; margin-top: 0">
+            Using SVM makes the model more efficient and accurate.So due to the
+            improvement in the efficiency the model will also perform well above
+            the treshold limit.And efficient data cleaning will also increases
+            the performance of the model.
+          </p>
+          <p class="sol" style="margin-bottom: 0">Attachments</p>
+          <ul style="list-style: none">
+            <li><a href="#">Attached File</a></li>
+            <li><a href="#">Github Repositary</a></li>
+          </ul>
+          <p class="sol" style="margin-bottom: 0">Posted by</p>
+          <blockquote><strong>Sai Abhi Ram</strong></blockquote>
+          <div class="d-flex justify-content-around">
+            <div>
+              <button class="btn btn-success">Approve</button>
+            </div>
+            <div>
+              <button class="btn btn-danger">Reject</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="text-center mt-5">Comments</h3>
+    <div class="container-fluid">
+      <section style="background-color: white">
+        <div class="container-fluid mt-1 py-5 mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-12 col-lg-10">
+              <div class="card text-dark">
+                <div class="card-body p-4">
+                  <h4 class="mb-0">Recent comments</h4>
+                  <p class="fw-light mb-4 pb-2">
+                    Latest Comments section by users
+                  </p>
+
+                  <div class="d-flex flex-start">
+                    <div>
+                      <img
+                        class="rounded-circle shadow-1-strong me-3"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(23).webp"
+                        alt="avatar"
+                        width="60"
+                        height="60"
+                      />
+                    </div>
+                    <div>
+                      <h6 class="fw-bold mb-1">Maggie Marsh</h6>
+                      <div class="d-flex align-items-center mb-3">
+                        <p class="mb-0">
+                          March 07, 2021
+                          <span class="badge bg-primary">Pending</span>
+                        </p>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-pencil-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-redo-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-heart ms-2"></i
+                        ></a>
+                      </div>
+                      <p class="mb-0">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-0" />
+
+                <div class="card-body p-4">
+                  <div class="d-flex flex-start">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(26).webp"
+                      alt="avatar"
+                      width="60"
+                      height="60"
+                    />
+                    <div>
+                      <h6 class="fw-bold mb-1">Lara Stewart</h6>
+                      <div class="d-flex align-items-center mb-3">
+                        <p class="mb-0">
+                          March 15, 2021
+                          <span class="badge bg-success">Approved</span>
+                        </p>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-pencil-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="text-success"
+                          ><i class="fas fa-redo-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="link-danger"
+                          ><i class="fas fa-heart ms-2"></i
+                        ></a>
+                      </div>
+                      <p class="mb-0">
+                        Contrary to popular belief, Lorem Ipsum is not simply
+                        random text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.
+                        Richard McClintock, a Latin professor at Hampden-Sydney
+                        College in Virginia, looked up one of the more obscure
+                        Latin words, consectetur, from a Lorem Ipsum passage,
+                        and going through the cites.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-0" style="height: 1px" />
+
+                <div class="card-body p-4">
+                  <div class="d-flex flex-start">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(33).webp"
+                      alt="avatar"
+                      width="60"
+                      height="60"
+                    />
+                    <div>
+                      <h6 class="fw-bold mb-1">Alexa Bennett</h6>
+                      <div class="d-flex align-items-center mb-3">
+                        <p class="mb-0">
+                          March 24, 2021
+                          <span class="badge bg-danger">Rejected</span>
+                        </p>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-pencil-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-redo-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-heart ms-2"></i
+                        ></a>
+                      </div>
+                      <p class="mb-0">
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in
+                        some form, by injected humour, or randomised words which
+                        don't look even slightly believable. If you are going to
+                        use a passage of Lorem Ipsum, you need to be sure.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-0" />
+
+                <div class="card-body p-4">
+                  <div class="d-flex flex-start">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(24).webp"
+                      alt="avatar"
+                      width="60"
+                      height="60"
+                    />
+                    <div>
+                      <h6 class="fw-bold mb-1">Betty Walker</h6>
+                      <div class="d-flex align-items-center mb-3">
+                        <p class="mb-0">
+                          March 30, 2021
+                          <span class="badge bg-primary">Pending</span>
+                        </p>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-pencil-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-redo-alt ms-2"></i
+                        ></a>
+                        <a href="#!" class="link-muted"
+                          ><i class="fas fa-heart ms-2"></i
+                        ></a>
+                      </div>
+                      <p class="mb-0">
+                        It uses a dictionary of over 200 Latin words, combined
+                        with a handful of model sentence structures, to generate
+                        Lorem Ipsum which looks reasonable. The generated Lorem
+                        Ipsum is therefore always free from repetition, injected
+                        humour, or non-characteristic words etc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
